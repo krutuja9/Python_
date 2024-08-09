@@ -1,17 +1,22 @@
 def calculate (r, unit, arr, n):
-  if arr is None or n ==0:
-    return -1
-
+  if n == 0:
+    returen -1
+    
   totalFoodRequired = r * unit
-  foodTillNow = 0
+  foodTillNow = 0;
+  house = 0
   
-  for hourse in range (n):
-    foodTillNow += arr[hourse]
-    if (foodTillNow >= totalFoodRgit equired):
-      return hourse + 1
-  return 0
-
-r = int(input("Enter number of rat:"))
-unit = int(input("Enter the value of units:"))
-n = int(input("number of elements in a array:"))
-arr = list(map(int, input("List elements with space separated:").split()))
+  for house in range(n):
+    foodTillNow += arr[house]
+    if foodTillNow >= totalFoodRequired:
+      break
+  
+  if totalFoodRequired > foodTillNow:
+    return 0
+  return house + 1
+  
+r = int(input("Enter rat Number "))
+unit = int (input("Enter Unit "))
+n = int(input("enter Number "))
+arr = list (map(int, input("enter arra ").split()))
+print (calculate (r, unit, arr, n))
