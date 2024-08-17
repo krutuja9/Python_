@@ -1,0 +1,16 @@
+# s = set ()
+# s.add(18)
+# s.add("18")
+# print(s)
+
+d = {}
+name = input("Enter friend name: ")
+lang = input("Enter Langauge name: ")
+d.update({name:lang})
+name = input("Enter friend name: ")
+lang = input("Enter Langauge name: ")
+d.update({name:lang})
+name = input("Enter friend name: ")
+lang = input("Enter Langauge name: ")
+d.update({name:lang})
+print(d)
