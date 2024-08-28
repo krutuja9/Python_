@@ -1,3 +1,7 @@
-from hello import chai
+import time
 
-chai("I am hello")
+start = time.time()
+for i in range(1,10):
+  print(i);
+  
+print(time.time() - start)
